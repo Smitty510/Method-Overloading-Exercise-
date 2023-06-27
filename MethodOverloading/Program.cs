@@ -4,16 +4,14 @@
     {
         public static void Main(string[] args)
         {
-            int a = 29;
-            int b = 55;
-                int answer = Add(a, b);
-            decimal d = 23.9m;
-            decimal e = 60.5m;
-                var decimalAnswer = Add(d, e);
+            int answer1 = Add(29, 55);
+            Console.WriteLine(answer1);
 
-            var lastSum = Add(0, 0, true);
-            Console.WriteLine($"int add: {answer} decimal add: {decimalAnswer}");
-            Console.WriteLine(lastSum.ToString());
+            decimal answer2 = Add(23.9m, 65.6m);
+            Console.WriteLine(answer2);
+
+            string answer3 = Add(6, 7, false);
+            Console.WriteLine(answer3);
 
 
         }
